@@ -73,74 +73,397 @@
 
     
     
-<pre><code><span><span class="co">#&gt; # HDF5AnnData</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; |Slot      |Getter |Getter test |Setter |Setter test |</span></span>
-<span><span class="co">#&gt; |:---------|:------|:-----------|:------|:-----------|</span></span>
-<span><span class="co">#&gt; |layers    |       |            |       |            |</span></span>
-<span><span class="co">#&gt; |obs       |       |            |       |            |</span></span>
-<span><span class="co">#&gt; |obs_names |       |            |       |            |</span></span>
-<span><span class="co">#&gt; |obsm      |       |            |       |            |</span></span>
-<span><span class="co">#&gt; |obsp      |       |            |       |            |</span></span>
-<span><span class="co">#&gt; |uns       |       |            |       |            |</span></span>
-<span><span class="co">#&gt; |var       |       |            |       |            |</span></span>
-<span><span class="co">#&gt; |var_names |       |            |       |            |</span></span>
-<span><span class="co">#&gt; |varm      |       |            |       |            |</span></span>
-<span><span class="co">#&gt; |varp      |       |            |       |            |</span></span>
-<span><span class="co">#&gt; |X         |       |            |       |            |</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; # InMemoryAnnData</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; |Slot      |Getter |Getter test |Setter |Setter test |</span></span>
-<span><span class="co">#&gt; |:---------|:------|:-----------|:------|:-----------|</span></span>
-<span><span class="co">#&gt; |layers    |[✓](https://github.com/scverse/anndataR/blob/main/R/InMemoryAnnData.R#L158)|[✓](https://github.com/scverse/anndataR/blob/main/tests/testthat/test-InMemoryAnnData.R#L136)|[✓](https://github.com/scverse/anndataR/blob/main/R/InMemoryAnnData.R#L161)|[✓](https://github.com/scverse/anndataR/blob/main/tests/testthat/test-InMemoryAnnData.R#L321)|</span></span>
-<span><span class="co">#&gt; |obs       |[✓](https://github.com/scverse/anndataR/blob/main/R/InMemoryAnnData.R#L171)|[✓](https://github.com/scverse/anndataR/blob/main/tests/testthat/test-InMemoryAnnData.R#L39)|[✓](https://github.com/scverse/anndataR/blob/main/R/InMemoryAnnData.R#L174)|[✓](https://github.com/scverse/anndataR/blob/main/tests/testthat/test-InMemoryAnnData.R#L219)|</span></span>
-<span><span class="co">#&gt; |obs_names |[✓](https://github.com/scverse/anndataR/blob/main/R/InMemoryAnnData.R#L199)|[✓](https://github.com/scverse/anndataR/blob/main/tests/testthat/test-InMemoryAnnData.R#L41)|[✓](https://github.com/scverse/anndataR/blob/main/R/InMemoryAnnData.R#L202)|[✓](https://github.com/scverse/anndataR/blob/main/tests/testthat/test-InMemoryAnnData.R#L281)|</span></span>
-<span><span class="co">#&gt; |obsm      |       |            |       |            |</span></span>
-<span><span class="co">#&gt; |obsp      |       |            |       |            |</span></span>
-<span><span class="co">#&gt; |uns       |       |            |       |            |</span></span>
-<span><span class="co">#&gt; |var       |[✓](https://github.com/scverse/anndataR/blob/main/R/InMemoryAnnData.R#L184)|[✓](https://github.com/scverse/anndataR/blob/main/tests/testthat/test-InMemoryAnnData.R#L40)|[✓](https://github.com/scverse/anndataR/blob/main/R/InMemoryAnnData.R#L187)|[✓](https://github.com/scverse/anndataR/blob/main/tests/testthat/test-InMemoryAnnData.R#L250)|</span></span>
-<span><span class="co">#&gt; |var_names |[✓](https://github.com/scverse/anndataR/blob/main/R/InMemoryAnnData.R#L214)|[✓](https://github.com/scverse/anndataR/blob/main/tests/testthat/test-InMemoryAnnData.R#L42)|[✓](https://github.com/scverse/anndataR/blob/main/R/InMemoryAnnData.R#L217)|[✓](https://github.com/scverse/anndataR/blob/main/tests/testthat/test-InMemoryAnnData.R#L301)|</span></span>
-<span><span class="co">#&gt; |varm      |       |            |       |            |</span></span>
-<span><span class="co">#&gt; |varp      |       |            |       |            |</span></span>
-<span><span class="co">#&gt; |X         |[✓](https://github.com/scverse/anndataR/blob/main/R/InMemoryAnnData.R#L146)|[✓](https://github.com/scverse/anndataR/blob/main/tests/testthat/test-InMemoryAnnData.R#L38)|[✓](https://github.com/scverse/anndataR/blob/main/R/InMemoryAnnData.R#L149)|[✓](https://github.com/scverse/anndataR/blob/main/tests/testthat/test-InMemoryAnnData.R#L195)|</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; # Seurat</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; |Slot      |Getter |Getter test |Setter |Setter test |</span></span>
-<span><span class="co">#&gt; |:---------|:------|:-----------|:------|:-----------|</span></span>
-<span><span class="co">#&gt; |layers    |       |            |       |            |</span></span>
-<span><span class="co">#&gt; |obs       |[✓](https://github.com/scverse/anndataR/blob/main/R/Seurat.R#L36)|            |       |            |</span></span>
-<span><span class="co">#&gt; |obs_names |[✓](https://github.com/scverse/anndataR/blob/main/R/Seurat.R#L27)|            |       |            |</span></span>
-<span><span class="co">#&gt; |obsm      |       |            |       |            |</span></span>
-<span><span class="co">#&gt; |obsp      |       |            |       |            |</span></span>
-<span><span class="co">#&gt; |uns       |       |            |       |            |</span></span>
-<span><span class="co">#&gt; |var       |[✓](https://github.com/scverse/anndataR/blob/main/R/Seurat.R#L31)|            |       |            |</span></span>
-<span><span class="co">#&gt; |var_names |[✓](https://github.com/scverse/anndataR/blob/main/R/Seurat.R#L23)|            |       |            |</span></span>
-<span><span class="co">#&gt; |varm      |       |            |       |            |</span></span>
-<span><span class="co">#&gt; |varp      |       |            |       |            |</span></span>
-<span><span class="co">#&gt; |X         |[✓](https://github.com/scverse/anndataR/blob/main/R/Seurat.R#L41)|            |       |            |</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; # SingleCellExperiment</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; |Slot      |Getter |Getter test |Setter |Setter test |</span></span>
-<span><span class="co">#&gt; |:---------|:------|:-----------|:------|:-----------|</span></span>
-<span><span class="co">#&gt; |layers    |[✓](https://github.com/scverse/anndataR/blob/main/R/SingleCellExperiment.R#L41)|            |       |            |</span></span>
-<span><span class="co">#&gt; |obs       |[✓](https://github.com/scverse/anndataR/blob/main/R/SingleCellExperiment.R#L55)|            |       |            |</span></span>
-<span><span class="co">#&gt; |obs_names |[✓](https://github.com/scverse/anndataR/blob/main/R/SingleCellExperiment.R#L56)|            |       |            |</span></span>
-<span><span class="co">#&gt; |obsm      |       |            |       |            |</span></span>
-<span><span class="co">#&gt; |obsp      |       |            |       |            |</span></span>
-<span><span class="co">#&gt; |uns       |       |            |       |            |</span></span>
-<span><span class="co">#&gt; |var       |[✓](https://github.com/scverse/anndataR/blob/main/R/SingleCellExperiment.R#L62)|            |       |            |</span></span>
-<span><span class="co">#&gt; |var_names |[✓](https://github.com/scverse/anndataR/blob/main/R/SingleCellExperiment.R#L63)|            |       |            |</span></span>
-<span><span class="co">#&gt; |varm      |       |            |       |            |</span></span>
-<span><span class="co">#&gt; |varp      |       |            |       |            |</span></span>
-<span><span class="co">#&gt; |X         |[✓](https://github.com/scverse/anndataR/blob/main/R/SingleCellExperiment.R#L33)|            |       |            |</span></span></code></pre>
-  </main>
+<div class="section level2">
+<h2 id="hdf5anndata">HDF5AnnData<a class="anchor" aria-label="anchor" href="#hdf5anndata"></a>
+</h2>
+<table class="table">
+<thead><tr class="header">
+<th align="left">Slot</th>
+<th align="left">Getter</th>
+<th align="left">Getter test</th>
+<th align="left">Setter</th>
+<th align="left">Setter test</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left">layers</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">obs</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">obs_names</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">obsm</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">obsp</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">uns</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">var</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">var_names</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">varm</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">varp</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">X</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section level2">
+<h2 id="inmemoryanndata">InMemoryAnnData<a class="anchor" aria-label="anchor" href="#inmemoryanndata"></a>
+</h2>
+<table class="table">
+<colgroup>
+<col width="20%">
+<col width="14%">
+<col width="25%">
+<col width="14%">
+<col width="25%">
+</colgroup>
+<thead><tr class="header">
+<th align="left">Slot</th>
+<th align="left">Getter</th>
+<th align="left">Getter test</th>
+<th align="left">Setter</th>
+<th align="left">Setter test</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left">layers</td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/R/InMemoryAnnData.R#L158" class="external-link">✓</a></td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/tests/testthat/test-InMemoryAnnData.R#L136" class="external-link">✓</a></td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/R/InMemoryAnnData.R#L161" class="external-link">✓</a></td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/tests/testthat/test-InMemoryAnnData.R#L321" class="external-link">✓</a></td>
+</tr>
+<tr class="even">
+<td align="left">obs</td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/R/InMemoryAnnData.R#L171" class="external-link">✓</a></td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/tests/testthat/test-InMemoryAnnData.R#L39" class="external-link">✓</a></td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/R/InMemoryAnnData.R#L174" class="external-link">✓</a></td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/tests/testthat/test-InMemoryAnnData.R#L219" class="external-link">✓</a></td>
+</tr>
+<tr class="odd">
+<td align="left">obs_names</td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/R/InMemoryAnnData.R#L199" class="external-link">✓</a></td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/tests/testthat/test-InMemoryAnnData.R#L41" class="external-link">✓</a></td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/R/InMemoryAnnData.R#L202" class="external-link">✓</a></td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/tests/testthat/test-InMemoryAnnData.R#L281" class="external-link">✓</a></td>
+</tr>
+<tr class="even">
+<td align="left">obsm</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">obsp</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">uns</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">var</td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/R/InMemoryAnnData.R#L184" class="external-link">✓</a></td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/tests/testthat/test-InMemoryAnnData.R#L40" class="external-link">✓</a></td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/R/InMemoryAnnData.R#L187" class="external-link">✓</a></td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/tests/testthat/test-InMemoryAnnData.R#L250" class="external-link">✓</a></td>
+</tr>
+<tr class="even">
+<td align="left">var_names</td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/R/InMemoryAnnData.R#L214" class="external-link">✓</a></td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/tests/testthat/test-InMemoryAnnData.R#L42" class="external-link">✓</a></td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/R/InMemoryAnnData.R#L217" class="external-link">✓</a></td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/tests/testthat/test-InMemoryAnnData.R#L301" class="external-link">✓</a></td>
+</tr>
+<tr class="odd">
+<td align="left">varm</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">varp</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">X</td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/R/InMemoryAnnData.R#L146" class="external-link">✓</a></td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/tests/testthat/test-InMemoryAnnData.R#L38" class="external-link">✓</a></td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/R/InMemoryAnnData.R#L149" class="external-link">✓</a></td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/tests/testthat/test-InMemoryAnnData.R#L195" class="external-link">✓</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section level2">
+<h2 id="seurat">Seurat<a class="anchor" aria-label="anchor" href="#seurat"></a>
+</h2>
+<table class="table">
+<colgroup>
+<col width="20%">
+<col width="14%">
+<col width="25%">
+<col width="14%">
+<col width="25%">
+</colgroup>
+<thead><tr class="header">
+<th align="left">Slot</th>
+<th align="left">Getter</th>
+<th align="left">Getter test</th>
+<th align="left">Setter</th>
+<th align="left">Setter test</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left">layers</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">obs</td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/R/Seurat.R#L36" class="external-link">✓</a></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">obs_names</td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/R/Seurat.R#L27" class="external-link">✓</a></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">obsm</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">obsp</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">uns</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">var</td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/R/Seurat.R#L31" class="external-link">✓</a></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">var_names</td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/R/Seurat.R#L23" class="external-link">✓</a></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">varm</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">varp</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">X</td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/R/Seurat.R#L41" class="external-link">✓</a></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section level2">
+<h2 id="singlecellexperiment">SingleCellExperiment<a class="anchor" aria-label="anchor" href="#singlecellexperiment"></a>
+</h2>
+<table class="table">
+<colgroup>
+<col width="20%">
+<col width="14%">
+<col width="25%">
+<col width="14%">
+<col width="25%">
+</colgroup>
+<thead><tr class="header">
+<th align="left">Slot</th>
+<th align="left">Getter</th>
+<th align="left">Getter test</th>
+<th align="left">Setter</th>
+<th align="left">Setter test</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left">layers</td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/R/SingleCellExperiment.R#L41" class="external-link">✓</a></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">obs</td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/R/SingleCellExperiment.R#L55" class="external-link">✓</a></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">obs_names</td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/R/SingleCellExperiment.R#L56" class="external-link">✓</a></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">obsm</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">obsp</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">uns</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">var</td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/R/SingleCellExperiment.R#L62" class="external-link">✓</a></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">var_names</td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/R/SingleCellExperiment.R#L63" class="external-link">✓</a></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">varm</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">varp</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">X</td>
+<td align="left"><a href="https://github.com/scverse/anndataR/blob/main/R/SingleCellExperiment.R#L33" class="external-link">✓</a></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+</div>
+  </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
+    </nav></aside>
 </div>
 
 
