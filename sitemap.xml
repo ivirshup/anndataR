@@ -79,6 +79,9 @@
     <loc>https://scverse.org/anndataR/reference/read_h5ad_numeric_scalar.html</loc>
   </url>
   <url>
+    <loc>https://scverse.org/anndataR/reference/read_h5ad_rec_array.html</loc>
+  </url>
+  <url>
     <loc>https://scverse.org/anndataR/reference/read_h5ad_sparse_array.html</loc>
   </url>
   <url>
