@@ -112,7 +112,7 @@ with with all elements having the dimensions consistent with
 <h3 id="method-new-">Method <code>new()</code><a class="anchor" aria-label="anchor" href="#method-new-"></a></h3>
 <p>HDF5AnnData constructor</p><div class="section">
 <h4 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a></h4>
-<p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va"><a href="../reference/HDF5AnnData.html">HDF5AnnData</a></span><span class="op">$</span><span class="fu">new</span><span class="op">(</span><span class="va">file</span>, <span class="va">X</span>, <span class="va">obs</span>, <span class="va">var</span>, <span class="va">obs_names</span>, <span class="va">var_names</span>, <span class="va">layers</span><span class="op">)</span></span></code></pre></div><p></p></div>
+<p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va"><a href="../reference/HDF5AnnData.html">HDF5AnnData</a></span><span class="op">$</span><span class="fu">new</span><span class="op">(</span><span class="va">file</span>, <span class="va">obs_names</span>, <span class="va">var_names</span>, <span class="va">X</span>, <span class="va">obs</span>, <span class="va">var</span>, <span class="va">layers</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div>
 
 <div class="section">
@@ -124,42 +124,42 @@ file does not exist yet, you must provide values for <code>X</code>, <code>obs</
 create a new AnnData with.</p></dd>
 
 
+<dt><code>obs_names</code></dt>
+<dd><p>A vector of unique identifiers
+used to identify each row of <code>obs</code> and to act as an index into
+the observation dimension of the AnnData object. The length of
+the <code>obs_names</code> defines the observation dimension of the AnnData
+object.</p></dd>
+
+
+<dt><code>var_names</code></dt>
+<dd><p>A vector of unique identifers
+used to identify each row of <code>var</code> and to act as an index into
+the variable dimension of the AnnData object. The length of
+the <code>var_names</code> defines the variable dimension of the AnnData
+object.</p></dd>
+
+
 <dt><code>X</code></dt>
-<dd><p>Either NULL or a observation x variable matrix with
+<dd><p>Either <code>NULL</code> or a observation × variable matrix with
 dimensions consistent with <code>obs</code> and <code>var</code>.</p></dd>
 
 
 <dt><code>obs</code></dt>
-<dd><p>A <code>data.frame</code> with columns containing information
-about observations. The number of rows of <code>obs</code> defines the
-observation dimension of the AnnData object.</p></dd>
+<dd><p>Either <code>NULL</code> or a <code>data.frame</code> with columns containing information
+about observations. If <code>NULL</code>, an <code>n_obs</code>×0 data frame will automatically
+be generated.</p></dd>
 
 
 <dt><code>var</code></dt>
-<dd><p>A <code>data.frame</code> with columns containing information
-about variables. The number of rows of <code>var</code> defines the variable
-dimension of the AnnData object.</p></dd>
-
-
-<dt><code>obs_names</code></dt>
-<dd><p>Either NULL or a vector of unique identifiers
-used to identify each row of <code>obs</code> and to act as an index into
-the observation dimension of the AnnData object. For
-compatibility with <em>R</em> representations, <code>obs_names</code> should be a
-character vector.</p></dd>
-
-
-<dt><code>var_names</code></dt>
-<dd><p>Either NULL or a vector of unique identifers
-used to identify each row of <code>var</code> and to act as an index into
-the variable dimension of the AnnData object. For compatibility
-with <em>R</em> representations, <code>var_names</code> should be a character
-vector.</p></dd>
+<dd><p>Either <code>NULL</code> or a <code>data.frame</code> with columns containing information
+about variables. If <code>NULL</code>, an <code>n_vars</code>×0 data frame will automatically
+be generated.</p></dd>
 
 
 <dt><code>layers</code></dt>
-<dd><p>Either NULL or a named list, where each element
-is an observation x variable matrix with dimensions consistent
+<dd><p>Either <code>NULL</code> or a named list, where each element
+is an observation × variable matrix with dimensions consistent
 with <code>obs</code> and <code>var</code>.</p></dd>
 
 
