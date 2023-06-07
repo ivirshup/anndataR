@@ -57,7 +57,7 @@
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">read_h5ad_element</span><span class="op">(</span><span class="va">file</span>, <span class="va">name</span>, type <span class="op">=</span> <span class="cn">NULL</span>, version <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">read_h5ad_element</span><span class="op">(</span><span class="va">file</span>, <span class="va">name</span>, type <span class="op">=</span> <span class="cn">NULL</span>, version <span class="op">=</span> <span class="cn">NULL</span>, <span class="va">...</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
@@ -77,6 +77,10 @@
 <dt>version</dt>
 <dd><p>The encoding version of the element to read</p></dd>
 
+
+<dt>...</dt>
+<dd><p>Extra arguments passed to individual reading functions</p></dd>
+
 </dl></div>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
@@ -86,8 +90,8 @@
     </div>
     <div class="section level2">
     <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
-    <p>If <code>encoding</code> is <code>NULL</code> the encoding and version are read from the element
-using <code><a href="read_h5ad_encoding.html">read_h5ad_encoding()</a></code></p>
+    <p>Encoding is automatically determined from the element using
+<code>read_h5ad_encoding</code> and used to select the appropriate reading function.</p>
     </div>
 
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
